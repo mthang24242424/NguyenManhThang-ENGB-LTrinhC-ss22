@@ -32,7 +32,7 @@ int main() {
         printf("7. Thoat\n");
         printf("Moi ban nhap lua chon: ");
         scanf("%d", &choose);
-        getchar(); // Clear buffer
+        getchar(); 
         switch (choose) {
             case 1:
                 printStudent();
@@ -99,7 +99,7 @@ void addStudent() {
     sv1.name[strcspn(sv1.name, "\n")] = '\0';
     printf("Nhap tuoi: ");
     scanf("%d", &sv1.age);
-    getchar(); // Clear buffer
+    getchar(); 
     sv[numberStudent++] = sv1;
     saveStudent();
 }
@@ -135,7 +135,7 @@ void editStudent() {
     sv[flag].name[strcspn(sv[flag].name, "\n")] = '\0';
     printf("Nhap tuoi moi: ");
     scanf("%d", &sv[flag].age);
-    getchar(); // Clear buffer
+    getchar();
     saveStudent();
 }
 
